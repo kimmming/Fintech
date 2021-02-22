@@ -35,3 +35,5 @@ console.log(car2.name);
 
 var cars = [car, car2, car3];
 console.log(cars);
+
+//#Work2 자동차 배열에서 bmw 라는 이름을가진 차량을 찾으면 "!" 출력하세요 for / if
