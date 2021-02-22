@@ -32,3 +32,6 @@ var car3 = {
 }
 
 console.log(car2.name);
+
+var cars = [car, car2, car3];
+console.log(cars);
