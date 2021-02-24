@@ -10,8 +10,21 @@
         $("#firstButton").click(function(){
             var userInput=$("#inputText").val();
             var userInput2=$("#inputText2").val();
+            $.ajax({
+                url: "/userData",
+                type: "POST",
+                data: {
+                    userData1 : userInput,
+                    userData2 : userInput2
+                },
+                success: function (data) {
+                    console.log(data);
+                    if(data === true){
+                        alert("요청 성공");
+                    }
+                },
+            });
 
-            alert("사용자 입력 데이터는:"+userInput+userInput2);
         })
     </script>
 </html>
